@@ -1,1 +1,101 @@
-Hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Peter Wajnkaim</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!--<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <!-- .container is main centered wrapper -->
+  <div class="container">
+    <h1 style="margin-bottom:0rem">Peter Wajnkaim</h1>
+    <h3>Past Projects</h3>
+    <hr>
+    <!-- columns should be the immediate child of a .row -->
+    <div class="row">
+      <div class="six columns">
+        <div>
+          <img src="images/terrain.jpg" alt="Terrain Renderer" style="border: 2px solid #555" width=100% height=auto>
+          <h5 style="margin-bottom:0rem">Terrain Renderer</h5>
+          <p>
+            A terrain rendering engine written from scratch in C++ using <a href="https://www.glfw.org/">GLFW</a> and OpenGL.
+            The terrain is seperated into chunks which switch to a lower LOD based on how distant they are.
+            The shaders include correct normal mapping, texture blending, as well as cascading shadow maps.
+            The terrain is procedurally generated on the fly as the camera moves through the world and automatically deleted when too far away.
+            The generation is done using perlin noise from <a href="https://github.com/Auburn/FastNoise2">FastNoise2</a>, a custom encoded node tree generator and seed can be inputted in the seed.txt file.
+            WASD controls, 1 and 2 can be pressed to switch between wireframe and normal mode.
+          </p>
+          <a href="files/terrain renderer.zip" download>
+            <input type="button" value="Download">
+          </a>
+        </div>
+      </div>
+      <div class="six columns">
+        <img src="images/biking.jpg" alt="Endless Biking" width=100% height=auto>
+        <h5 style="margin-bottom:0rem">Endless Biking</h5>
+        <p>
+          A simple endless runner game, avoid cars and see how far you can make it. Rendering is done from scratch using C++ and OpenGL. Made for a 2nd year university project.
+          Use A and D to steer and W and S to speed up and slow down.
+        </p>
+        <a href="files/Endless Biking.zip" download>
+          <input type="button" value="Download">
+        </a>
+      </div>
+    </div>
+
+    <!-- just use a number and class 'column' or 'columns' -->
+    <div class="row">
+      <div class="six columns">
+        <img src="images/quantum.jpg" alt="Quantum Lock" style="border: 2px solid #555" width=100% height=auto>
+        <h5 style="margin-bottom:0rem">Quantum Lock</h5>
+        <p>
+          .
+        </p>
+        <a href="files/Quantum-Lock.zip" download>
+          <input type="button" value="Download">
+        </a>
+      </div>
+      <div class="six columns">
+        <img src="images/wizard.jpg" alt="Wizard Defense" width=100% height=auto>
+        <h5 style="margin-bottom:0rem">Wizard Defense</h5>
+        <p>
+          .
+        </p>
+        <a href="files/Wizard Defense.zip" download>
+          <input type="button" value="Download">
+        </a>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
